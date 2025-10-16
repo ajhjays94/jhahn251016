@@ -1,225 +1,27 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>경제 뉴스 허브</title>
-    <style>
-        /* 기본 스타일 */
-        body {
-            font-family: 'Noto Sans KR', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa; /* 배경색을 조금 더 부드럽게 변경 */
-            color: #212529; /* 기본 텍스트 색상 변경 */
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        header {
-            background-color: #ffffff;
-            padding: 25px 40px;
-            border-bottom: 1px solid #dee2e6;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.2em;
-            color: #0056b3; /* 포인트 컬러 적용 */
-            font-weight: 700;
-        }
-        header p {
-            margin: 8px 0 0;
-            color: #6c757d;
-            font-size: 1.1em;
-        }
-        .container {
-            flex: 1;
-            max-width: 1200px;
-            margin: 50px auto;
-            padding: 20px;
-        }
-        /* 그리드 컨테이너 스타일 */
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-            gap: 35px;
-        }
-        /* 개별 카드 아이템 스타일 */
-        .grid-item {
-            background-color: #ffffff;
-            border-radius: 12px; /* 모서리를 더 둥글게 */
-            border: 1px solid #e9ecef; /* 은은한 테두리 추가 */
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
-        .grid-item:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 8px 25px rgba(0, 86, 179, 0.1); /* 포인트 컬러와 연계된 그림자 */
-        }
-        /* 이미지 컨테이너 스타일 */
-        .img-container {
-            width: 150px;
-            height: 130px;
-            flex-shrink: 0;
-        }
-        .grid-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        /* 텍스트 컨테이너 스타일 */
-        .text-container {
-            padding: 20px 25px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            flex-grow: 1;
-        }
-        .text-container h2 {
-            margin: 0;
-            font-size: 1.5em;
-        }
-        .text-container h2 a {
-            text-decoration: none;
-            color: #343a40;
-            transition: color 0.2s;
-        }
-        .text-container h2 a:hover {
-            color: #0056b3;
-        }
-        .description {
-            font-size: 0.95em;
-            color: #6c757d;
-            margin: 8px 0 15px; /* 위아래 여백 조정 */
-        }
-        .cta-button {
-            font-weight: 700;
-            color: #0056b3;
-            text-decoration: none;
-            align-self: flex-start; /* 버튼을 왼쪽 정렬 */
-            transition: transform 0.2s;
-        }
-        .cta-button:hover {
-            transform: translateX(4px); /* 호버 시 살짝 움직이는 효과 */
-        }
-        footer {
-            background-color: #343a40;
-            color: #f8f9fa;
-            text-align: center;
-            padding: 25px;
-            margin-top: auto;
-        }
-
-        /* 모바일 화면을 위한 반응형 스타일 */
-        @media (max-width: 480px) {
-            header h1 { font-size: 1.8em; }
-            .grid-container {
-                grid-template-columns: 1fr; /* 모바일에서는 한 줄에 하나씩 */
-            }
-            .grid-item {
-                flex-direction: column;
-            }
-            .img-container {
-                width: 100%;
-                height: 180px;
-            }
-            .text-container {
-                text-align: center;
-                align-items: center;
-            }
-            .cta-button {
-                align-self: center; /* 모바일에서는 버튼 중앙 정렬 */
-            }
-        }
-    </style>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+<title>경제신문 바로가기</title>
 </head>
 <body>
 
-    <header>
-        <h1>경제 뉴스 허브</h1>
-        <p>엄선된 경제 전문지의 인사이트를 한눈에 확인하세요.</p>
-    </header>
+<!-- 전체 섹션을 감싸는 컨테이너 -->
+<div style="background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/wood-pattern.png'); padding: 20px; border-radius: 15px;">
+    
+    <!-- 링크들을 담는 반투명 흰색 박스 -->
+    <div style="display: flex; justify-content: space-around; align-items: center; padding: 20px; background-color: rgba(255, 255, 255, 0.85); border-radius: 10px;">
+        
+        <!-- 개별 신문사 링크 -->
+        <a href="https://www.mk.co.kr/" target="_blank" style="text-decoration: none; color: #333; font-weight: bold; font-size: 1.2em; padding: 10px;">매일경제</a>
+        <a href="https://www.hankyung.com/" target="_blank" style="text-decoration: none; color: #333; font-weight: bold; font-size: 1.2em; padding: 10px;">한국경제</a>
+        <a href="https://www.sedaily.com/" target="_blank" style="text-decoration: none; color: #333; font-weight: bold; font-size: 1.2em; padding: 10px;">서울경제</a>
+        <a href="https://www.fnnews.com/" target="_blank" style="text-decoration: none; color: #333; font-weight: bold; font-size: 1.2em; padding: 10px;">파이낸셜뉴스</a>
+        <a href="https://www.edaily.co.kr/" target="_blank" style="text-decoration: none; color: #333; font-weight: bold; font-size: 1.2em; padding: 10px;">이데일리</a>
+        <a href="https://biz.heraldcorp.com/" target="_blank" style="text-decoration: none; color: #333; font-weight: bold; font-size: 1.2em; padding: 10px;">헤럴드경제</a>
+        <a href="https://www.etoday.co.kr/" target="_blank" style="text-decoration: none; color: #333; font-weight: bold; font-size: 1.2em; padding: 10px;">이투데이</a>
 
-    <div class="container">
-        <div class="grid-container">
-            <!-- 매일경제 -->
-            <div class="grid-item">
-                <div class="img-container">
-                    <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=870&auto=format&fit=crop" alt="매일경제신문">
-                </div>
-                <div class="text-container">
-                    <h2><a href="https://www.mk.co.kr/" target="_blank">매일경제</a></h2>
-                    <p class="description">대한민국을 대표하는 종합 경제 일간지</p>
-                    <a href="https://www.mk.co.kr/" target="_blank" class="cta-button">바로가기 →</a>
-                </div>
-            </div>
-            <!-- 한국경제 -->
-            <div class="grid-item">
-                <div class="img-container">
-                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=870&auto=format&fit=crop" alt="한국경제신문">
-                </div>
-                <div class="text-container">
-                    <h2><a href="https://www.hankyung.com/" target="_blank">한국경제</a></h2>
-                    <p class="description">시장 경제를 선도하는 정통 경제신문</p>
-                    <a href="https://www.hankyung.com/" target="_blank" class="cta-button">바로가기 →</a>
-                </div>
-            </div>
-            <!-- 서울경제 -->
-            <div class="grid-item">
-                <div class="img-container">
-                    <img src="https://images.unsplash.com/photo-1519010470956-6d877008eaa4?q=80&w=870&auto=format&fit=crop" alt="서울경제">
-                </div>
-                <div class="text-container">
-                    <h2><a href="https://www.sedaily.com/" target="_blank">서울경제</a></h2>
-                    <p class="description">산업과 증권 시장에 대한 깊이 있는 분석</p>
-                    <a href="https://www.sedaily.com/" target="_blank" class="cta-button">바로가기 →</a>
-                </div>
-            </div>
-            <!-- 이투데이 -->
-            <div class="grid-item">
-                <div class="img-container">
-                    <img src="https://images.unsplash.com/photo-1600565193348-f74d3c2723a9?q=80&w=870&auto=format&fit=crop" alt="이투데이">
-                </div>
-                <div class="text-container">
-                    <h2><a href="https://www.etoday.co.kr/" target="_blank">이투데이</a></h2>
-                    <p class="description">정부 정책과 기업 정보를 다루는 경제 미디어</p>
-                    <a href="https://www.etoday.co.kr/" target="_blank" class="cta-button">바로가기 →</a>
-                </div>
-            </div>
-            <!-- 파이낸셜뉴스 -->
-            <div class="grid-item">
-                <div class="img-container">
-                    <img src="https://images.unsplash.com/photo-1538688423619-a83d0f245030?q=80&w=774&auto=format&fit=crop" alt="파이낸셜뉴스">
-                </div>
-                <div class="text-container">
-                    <h2><a href="https://www.fnnews.com/" target="_blank">파이낸셜뉴스</a></h2>
-                    <p class="description">금융 및 재테크 전문 뉴스와 정보 제공</p>
-                    <a href="https://www.fnnews.com/" target="_blank" class="cta-button">바로가기 →</a>
-                </div>
-            </div>
-            <!-- 이데일리 -->
-            <div class="grid-item">
-                <div class="img-container">
-                    <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=871&auto=format&fit=crop" alt="이데일리">
-                </div>
-                <div class="text-container">
-                    <h2><a href="https://www.edaily.co.kr/" target="_blank">이데일리</a></h2>
-                    <p class="description">빠르고 정확한 온라인 경제 뉴스 매체</p>
-                    <a href="https://www.edaily.co.kr/" target="_blank" class="cta-button">바로가기 →</a>
-                </div>
-            </div>
-        </div>
     </div>
-
-    <footer>
-        <p>&copy; 2025 Economic News Hub. All Rights Reserved.</p>
-    </footer>
+</div>
 
 </body>
 </html>
